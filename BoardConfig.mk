@@ -17,5 +17,6 @@ include device/sony/common/CommonConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := SGP712
 
+BOARD_KERNEL_CMDLINE += androidboot.hardware=karin_windy
+
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/maxim_sti/gesture_wakeup"
-TARGET_TAP_TO_WAKE_STRING := true

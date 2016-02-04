@@ -16,9 +16,23 @@ TARGET_KERNEL_CONFIG := aosp_kitakami_karin_windy_defconfig
 
 $(call inherit-product, device/sony/karin/aosp_sgp771_common.mk)
 
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.karin_windy \
+    init.karin_windy \
+    ueventd.karin_windy
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.karin_windy
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.karin_windy
+
 # NFC config
-PRODUCT_PACKAGES += nfc_nci.karin_windy
-ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=karin_windy
+PRODUCT_PACKAGES += \
+    nfc_nci.karin_windy
 
 PRODUCT_NAME := aosp_sgp712_windy
 PRODUCT_DEVICE := karin_windy
