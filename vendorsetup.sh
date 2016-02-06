@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_sgp712_windy-userdebug
+add_lunch_combo aosp_sgp712-userdebug
