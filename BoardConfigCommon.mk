@@ -12,30 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_kitakami_karin_windy_defconfig
+include device/sony/kitakami/BoardConfig.mk
 
-$(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
-
-# Device Init
-PRODUCT_PACKAGES += \
-    init.recovery.karin_windy \
-    init.karin_windy \
-    ueventd.karin_windy
-
-# Lights
-PRODUCT_PACKAGES += \
-    lights.karin_windy
-
-# Simple PowerHAL
-PRODUCT_PACKAGES += \
-    power.karin_windy
-
-# NFC config
-PRODUCT_PACKAGES += \
-    nfc_nci.karin_windy
-
-PRODUCT_NAME := aosp_sgp712_windy
-PRODUCT_DEVICE := karin_windy
-PRODUCT_MODEL := Xperia Z4 Tablet WiFi(AOSP)
-PRODUCT_BRAND := Sony
-PRODUCT_MANUFACTURER := Sony
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/maxim_sti/gesture_wakeup"
