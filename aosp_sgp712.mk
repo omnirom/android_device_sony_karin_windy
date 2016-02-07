@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.karin_windy
 
-PRODUCT_NAME := aosp_sgp712_windy
+PRODUCT_NAME := aosp_sgp712
 PRODUCT_DEVICE := karin_windy
 PRODUCT_MODEL := Xperia Z4 Tablet WiFi(AOSP)
 PRODUCT_BRAND := Sony
