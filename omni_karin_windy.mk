@@ -12,6 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/kitakami-common/PlatformConfigOmni.mk
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 1440x814
 
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/maxim_sti/gesture_wakeup"
+# Inherit AOSP Kitakami common device parts
+$(call inherit-product, device/sony/karin_windy/aosp_sgp712.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
+
+# Inherit TWRP requirements
+$(call inherit-product, device/sony/karin_windy/twrp.mk)
+
+# Override Product Name for OmniROM
+PRODUCT_NAME := omni_karin_windy
+PRODUCT_MODEL := Xperia Z4 Tablet WiFi
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := SGP712,karin_windy

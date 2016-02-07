@@ -13,4 +13,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosp_sgp712.mk
+	$(LOCAL_DIR)/omni_karin_windy.mk
