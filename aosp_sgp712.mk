@@ -20,6 +20,9 @@ $(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=wifi-only
+
 # Device Init
 PRODUCT_PACKAGES += \
     init.recovery.karin_windy \
