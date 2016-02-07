@@ -12,11 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/kitakami/BoardConfig.mk
-include device/sony/common/CommonConfig.mk
+include device/sony/karin_windy/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := SGP712
-
 BOARD_KERNEL_CMDLINE += androidboot.hardware=karin_windy
-
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/maxim_sti/gesture_wakeup"

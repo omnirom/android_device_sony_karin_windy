@@ -1,4 +1,3 @@
-#
 # Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,6 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-add_lunch_combo aosp_sgp712-userdebug
+include device/sony/kitakami/BoardConfig.mk
+
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/maxim_sti/gesture_wakeup"
