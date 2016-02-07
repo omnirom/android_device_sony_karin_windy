@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
     device/sony/karin_windy/rootdir/system/vendor/etc/touch_fusion_panel_id_0x071B.cfg:system/vendor/etc/touch_fusion_panel_id_0x071B.cfg \
     device/sony/karin_windy/rootdir/system/vendor/etc/touch_fusion_panel_id_0x071F.cfg:system/vendor/etc/touch_fusion_panel_id_0x071F.cfg
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    device/sony/karin_windy/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
+
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
