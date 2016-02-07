@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/kitakami/BoardConfig.mk
+include device/sony/kitakami/PlatformConfig.mk
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/maxim_sti/gesture_wakeup"

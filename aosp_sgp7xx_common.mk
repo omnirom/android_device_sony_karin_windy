@@ -15,7 +15,7 @@
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/karin_windy/overlay
 
-$(call inherit-product, device/sony/kitakami/device.mk)
+$(call inherit-product, device/sony/kitakami/platform.mk)
 $(call inherit-product, vendor/sony/karin/karin-vendor.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
