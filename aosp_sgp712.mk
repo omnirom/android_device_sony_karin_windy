@@ -17,6 +17,9 @@ TARGET_KERNEL_CONFIG := aosp_kitakami_karin_windy_defconfig
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
+
 # Device Init
 PRODUCT_PACKAGES += \
     init.recovery.karin_windy \
