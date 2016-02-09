@@ -15,10 +15,6 @@
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/karin_windy/overlay
 
-$(call inherit-product, device/sony/kitakami/platform.mk)
-$(call inherit-product, vendor/sony/karin/karin-vendor.mk)
-$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
-
 PRODUCT_COPY_FILES += \
     device/sony/karin_windy/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/sony/karin_windy/rootdir/system/etc/BCM4356.hcd:system/etc/firmware/BCM43xx.hcd \
@@ -27,7 +23,9 @@ PRODUCT_COPY_FILES += \
     device/sony/karin_windy/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/karin_windy/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/sony/karin_windy/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/sony/karin_windy/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/sony/karin_windy/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
+
+PRODUCT_COPY_FILES += \
     device/sony/karin_windy/rootdir/system/vendor/etc/touch_fusion_panel_id_0x0000.cfg:system/vendor/etc/touch_fusion_panel_id_0x0000.cfg \
     device/sony/karin_windy/rootdir/system/vendor/etc/touch_fusion_panel_id_0x0700.cfg:system/vendor/etc/touch_fusion_panel_id_0x0700.cfg \
     device/sony/karin_windy/rootdir/system/vendor/etc/touch_fusion_panel_id_0x0701.cfg:system/vendor/etc/touch_fusion_panel_id_0x0701.cfg \
@@ -54,3 +52,7 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     ro.usb.pid_suffix=1CF
+
+$(call inherit-product, device/sony/kitakami/platform.mk)
+$(call inherit-product, vendor/sony/karin/karin-vendor.mk)
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
