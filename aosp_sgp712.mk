@@ -14,14 +14,10 @@
 
 TARGET_KERNEL_CONFIG := aosp_kitakami_karin_windy_defconfig
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
-
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES := \
     ro.carrier=wifi-only
 
 # Device Init
@@ -41,6 +37,10 @@ PRODUCT_PACKAGES += \
 # NFC config
 PRODUCT_PACKAGES += \
     nfc_nci.karin_windy
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/karin_windy/aosp_sgp7xx_common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 PRODUCT_NAME := aosp_sgp712
 PRODUCT_DEVICE := karin_windy
