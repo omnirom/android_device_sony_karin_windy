@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_kitakami_karin_windy_defconfig
-
 PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
