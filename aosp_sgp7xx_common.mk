@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.pid_suffix=1CF
 
 $(call inherit-product, device/sony/kitakami/platform.mk)
-$(call inherit-product, vendor/sony/karin/karin-vendor.mk)
+$(call inherit-product, vendor/sony/kitakami-karin/karin-vendor.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 # copy wlan firmware
