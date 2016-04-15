@@ -37,6 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     ro.usb.pid_suffix=1CF
 
+# Camera actuator selection
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.alt.act=false
+
 $(call inherit-product, device/sony/kitakami-common/platform_omni.mk)
 $(call inherit-product, vendor/sony/kitakami-karin/karin-vendor.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
