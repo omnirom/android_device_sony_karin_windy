@@ -10,7 +10,7 @@ boardflags2=0x00802000
 boardflags3=0x4800010a
 
 macaddr=00:90:4c:19:80:01
-ccode=XT
+ccode=0
 regrev=54
 antswitch=0
 pdgain5g=4
