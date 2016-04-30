@@ -81,8 +81,6 @@
 		</resource>
 
 		<!-- device-specific -->
-		<resource name="backlight" type="sysfs">/sys/class/leds/lcd-backlight/max_brightness</resource>
-
 		<resource name="kgsl-3d0" type="sysfs">/sys/class/kgsl/kgsl-3d0/max_gpuclk</resource>
 		<resource name="usb" type="sysfs">/sys/class/power_supply/usb/current_max</resource>
 		<resource name="charge_speed" type="sysfs">/sys/class/power_supply/battery/system_temp_level</resource>
@@ -141,19 +139,6 @@
 	<control name="shutdown">
 		<mitigation level="off" />
 		<mitigation level="1"><value resource="shutdown"/></mitigation>
-	</control>
-
-	<control name="backlight">
-		<mitigation level="off"><value resource="backlight">255</value></mitigation>
-		<mitigation level="1"><value resource="backlight">209</value></mitigation>
-		<mitigation level="2"><value resource="backlight">171</value></mitigation>
-		<mitigation level="3"><value resource="backlight">141</value></mitigation>
-		<mitigation level="4"><value resource="backlight">115</value></mitigation>
-		<mitigation level="5"><value resource="backlight">95</value></mitigation>
-		<mitigation level="6"><value resource="backlight">78</value></mitigation>
-		<mitigation level="7"><value resource="backlight">64</value></mitigation>
-		<mitigation level="8"><value resource="backlight">52</value></mitigation>
-		<mitigation level="9"><value resource="backlight">44</value></mitigation>
 	</control>
 
 	<control name="gpu">
@@ -288,40 +273,6 @@
 		</threshold>
 		<threshold trigger="50800" clear="50300">
 			<mitigation name="modem" level="1" />
-		</threshold>
-	</configuration>
-
-	<!-- backlight -->
-	<configuration sensor="pm8994_tz">
-		<threshold>
-			<mitigation name="backlight" level="off" />
-		</threshold>
-		<threshold trigger="45600" clear="44000">
-			<mitigation name="backlight" level="1" />
-		</threshold>
-		<threshold trigger="47400" clear="47000">
-			<mitigation name="backlight" level="2" />
-		</threshold>
-		<threshold trigger="47800" clear="47500">
-			<mitigation name="backlight" level="3" />
-		</threshold>
-		<threshold trigger="48200" clear="47900">
-			<mitigation name="backlight" level="4" />
-		</threshold>
-		<threshold trigger="48600" clear="48300">
-			<mitigation name="backlight" level="5" />
-		</threshold>
-		<threshold trigger="49000" clear="48700">
-			<mitigation name="backlight" level="6" />
-		</threshold>
-		<threshold trigger="49400" clear="49100">
-			<mitigation name="backlight" level="7" />
-		</threshold>
-		<threshold trigger="49800" clear="49500">
-			<mitigation name="backlight" level="8" />
-		</threshold>
-		<threshold trigger="50200" clear="49900">
-			<mitigation name="backlight" level="9" />
 		</threshold>
 	</configuration>
 
