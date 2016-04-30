@@ -197,15 +197,9 @@
 			<mitigation name="usb" level="2" />
 		</threshold>
 		<threshold trigger="49400" clear="49100">
-			<mitigation name="usb" level="3" />
-		</threshold>
-		<threshold trigger="50200" clear="49900">
 			<mitigation name="usb" level="4" />
 		</threshold>
-		<threshold trigger="50800" clear="50300">
-			<mitigation name="usb" level="5" />
-		</threshold>
-		<threshold trigger="51200" clear="50900">
+		<threshold trigger="50200" clear="49900">
 			<mitigation name="usb" level="6" />
 		</threshold>
 	</configuration>
@@ -216,7 +210,7 @@
 			<mitigation name="charging" level="off" />
 		</threshold>
 		<threshold trigger="45600" clear="44000">
-			<mitigation name="charging" level="3" />
+			<mitigation name="charging" level="5" />
 		</threshold>
 		<threshold trigger="49000" clear="48700">
 			<mitigation name="charging" level="8" />
