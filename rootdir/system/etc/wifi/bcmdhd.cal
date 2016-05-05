@@ -10,15 +10,13 @@ boardflags2=0x00802000
 boardflags3=0x4800010a
 
 macaddr=00:90:4c:19:80:01
-ccode=XT
+ccode=0
 regrev=54
 antswitch=0
 pdgain5g=4
 pdgain2g=4
-tworangetssi2g=1
+tworangetssi2g=0
 tworangetssi5g=0
-lowpowerrange2g=0
-lowpowerrange5g=0
 femctrl=10
 vendid=0x14e4
 devid=0x43ec
