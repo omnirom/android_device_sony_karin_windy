@@ -143,6 +143,12 @@
     <!-- Operating voltage for bluetooth controller. 0 by default-->
     <integer name="config_bluetooth_operating_voltage_mv">3600</integer>
 
+    <!-- Rx current for bluetooth controller. 0 by default-->
+    <integer name="config_bluetooth_rx_cur_ma">25</integer>
+
+    <!-- Tx current for bluetooth controller. 0 by default-->
+    <integer name="config_bluetooth_tx_cur_ma">25</integer>
+
     <!-- Operating voltage for wifi radio. 0 by default-->
     <integer name="config_wifi_operating_voltage_mv">3600</integer>
 
