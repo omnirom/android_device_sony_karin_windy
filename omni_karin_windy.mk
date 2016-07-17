@@ -18,9 +18,6 @@ TARGET_BOOTANIMATION_SIZE := 1440x814
 # Inherit AOSP Kitakami common device parts
 $(call inherit-product, device/sony/karin_windy/aosp_sgp712.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common_tablet.mk)
-
 # Inherit TWRP requirements
 $(call inherit-product, device/sony/karin_windy/twrp.mk)
 
