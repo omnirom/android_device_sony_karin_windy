@@ -39,7 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera actuator selection
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.alt.act=false
+    persist.camera.alt.act=true
 
 $(call inherit-product, device/sony/kitakami-common/platform_omni.mk)
 $(call inherit-product, vendor/sony/kitakami-karin/karin-vendor.mk)
