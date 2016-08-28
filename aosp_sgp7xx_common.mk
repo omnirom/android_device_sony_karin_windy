@@ -27,6 +27,9 @@ PRODUCT_COPY_FILES += \
     device/sony/karin_windy/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/karin_windy/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml
+
 PRODUCT_AAPT_CONFIG := xlarge
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
