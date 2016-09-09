@@ -36,4 +36,4 @@ PRODUCT_COPY_FILES += \
 
 # TS FW
 PRODUCT_COPY_FILES += \
-    vendor/sony/kitakami-karin/proprietary/vendor/firmware/max11945.bin:recovery/root/vendor/firmware/max11945.bin
+    vendor/sony/kitakami-karin/proprietary/vendor/firmware/max11945.bin:recovery/root/system/vendor/firmware/max11945.bin
