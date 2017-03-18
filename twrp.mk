@@ -1,14 +1,11 @@
 #
 # This is for TWRP Recovery
-# Make sure that files are present at their respective folders
 #
 
 TW_THEME := landscape_hdpi
-TW_IGNORE_ABS_MT_TRACKING_ID := true
 
 # TS config from kitakami-common
 PRODUCT_COPY_FILES += \
-    device/sony/kitakami-common/rootdir/system/usr/keylayout/touch_fusion.kl:recovery/root/system/usr/keylayout/touch_fusion.kl \
     device/sony/kitakami-common/rootdir/system/usr/idc/touch_fusion.idc:recovery/root/system/usr/idc/touch_fusion.idc
 
 # TS config
@@ -36,4 +33,4 @@ PRODUCT_COPY_FILES += \
 
 # TS FW
 PRODUCT_COPY_FILES += \
-    vendor/sony/kitakami-karin/proprietary/vendor/firmware/max11945.bin:recovery/root/system/vendor/firmware/max11945.bin
+    vendor/sony/kitakami-karin/proprietary/vendor/firmware/max11945.bin:recovery/root/vendor/firmware/max11945.bin
