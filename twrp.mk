@@ -4,33 +4,32 @@
 
 TW_THEME := landscape_hdpi
 
-# TS config from kitakami-common
-PRODUCT_COPY_FILES += \
-    device/sony/kitakami-common/rootdir/system/usr/idc/touch_fusion.idc:recovery/root/system/usr/idc/touch_fusion.idc
+TW_LOCAL := device/sony/karin_windy/twrp/vendor
+TWRP_OUT := recovery/root
 
 # TS config
 PRODUCT_COPY_FILES += \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0000.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0000.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0700.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0700.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0701.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0701.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0702.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0702.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0704.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0704.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0705.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0705.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0706.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0706.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0708.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0708.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0709.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0709.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x070A.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x070A.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x070C.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x070C.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x070D.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x070D.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0710.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0710.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x0717.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x0717.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x071B.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x071B.cfg \
-    vendor/sony/kitakami-karin/proprietary/vendor/etc/touch_fusion_panel_id_0x071F.cfg:recovery/root/system/vendor/etc/touch_fusion_panel_id_0x071F.cfg
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0000.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0000.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0700.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0700.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0701.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0701.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0702.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0702.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0704.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0704.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0705.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0705.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0706.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0706.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0708.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0708.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0709.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0709.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x070A.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x070A.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x070C.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x070C.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x070D.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x070D.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0710.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0710.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x0717.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x0717.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x071B.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x071B.cfg \
+    $(TW_LOCAL)/etc/touch_fusion_panel_id_0x071F.cfg:$(TWRP_OUT)/system/vendor/etc/touch_fusion_panel_id_0x071F.cfg
 
 # TS FW loader
 PRODUCT_COPY_FILES += \
-    vendor/sony/kitakami-karin/proprietary/vendor/bin/touch_fusion:recovery/root/system/vendor/bin/touch_fusion
+    $(TW_LOCAL)/bin/touch_fusion:$(TWRP_OUT)/system/vendor/bin/touch_fusion
 
 # TS FW
 PRODUCT_COPY_FILES += \
-    vendor/sony/kitakami-karin/proprietary/vendor/firmware/max11945.bin:recovery/root/vendor/firmware/max11945.bin
+    $(TW_LOCAL)/firmware/max11945.bin:$(TWRP_OUT)/vendor/firmware/max11945.bin
